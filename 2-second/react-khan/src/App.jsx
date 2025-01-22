@@ -2,6 +2,7 @@ import React from "react"
 import LearnJsxs from "./components/LearnJsxs.jsx"
 import Ternary from "./components/Ternary.jsx"
 import NetflixSeries from "./components/NetflixSeries.jsx"
+import ShowOutput from "../src/interviewQuestion/ShowOutput.jsx"
 // these tow App function work same in backside
 export  const App=()=>{
     console.log("this is app page");
@@ -9,12 +10,13 @@ export  const App=()=>{
     let requiredAge=17;
 return (
     <div>
- <NetflixSeries  age={16}/>
+ {/* <NetflixSeries  age={16}/>
  <NetflixSeries  age={18}/>
  <NetflixSeries  age={15}/>
  <NetflixSeries  age={20}/>
- <NetflixSeries  age={18}/>
+ <NetflixSeries  age={18}/> */}
 {/*<Ternary/> */}
+<ShowOutput />
 
 </div>
 
