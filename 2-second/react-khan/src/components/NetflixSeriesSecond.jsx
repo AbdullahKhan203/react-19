@@ -1,12 +1,13 @@
 import React from 'react'
 import Data from '../api/seriesData.json'
+import NetflixCard from './NetflixCard'
 export default function NetflixSeriesSecond(){
     console.log("NetflixSeriesSecond")
     console.log(Data)
   return (
     <ul>
 
-        {
+        {/* {
             Data.map((item,i)=>{
                 return   <li>
              <div>
@@ -21,10 +22,19 @@ export default function NetflixSeriesSecond(){
             <button>Watch Now</button>
          </a>
          </li>
+       
         })
 
 
-    }
+  }  */}
+
+   {
+     Data.map((item,i)=>{
+
+     return <NetflixCard key={i} data={item} />
+     })
+   }
+      
 
     
        
