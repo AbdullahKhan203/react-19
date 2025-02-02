@@ -1,12 +1,12 @@
 import React from 'react'
 
-// export default function NetflixCard({data}) {
-export default function NetflixCard(props) {
-    console.log("from NetflixCard component",props.data)
+export default function NetflixCard({data}) {
+// export default function NetflixCard(props) {
+   //  console.log("from NetflixCard component",props.data)
    //  destructuring
    // const {data}=props
-   // const {img_url,name,rating,description,genre,cast,watch_url}=data
-   const {img_url,name,rating,description,genre,cast,watch_url}=props.data
+   const {id,img_url,name,rating,description,genre,cast,watch_url}=data
+   // const {img_url,name,rating,description,genre,cast,watch_url}=props.data
   return (
     <>
     {/* {props.data.map((item,i)=>{
