@@ -1,7 +1,12 @@
 import React from 'react'
 
+// export default function NetflixCard({data}) {
 export default function NetflixCard(props) {
     console.log("from NetflixCard component",props.data)
+   //  destructuring
+   // const {data}=props
+   // const {img_url,name,rating,description,genre,cast,watch_url}=data
+   const {img_url,name,rating,description,genre,cast,watch_url}=props.data
   return (
     <>
     {/* {props.data.map((item,i)=>{
@@ -24,14 +29,14 @@ export default function NetflixCard(props) {
 
  <li>
               <div>
-                 <img  src={props.data.img_url} alt="image" width="40%" height="40%" />
+                 <img  src={img_url} alt="image" width="40%" height="40%" />
           </div>
-          <h2>Name:{props.data.name}</h2>
-          <h3>Rating:{props.data.rating}</h3>
-          <p>Summary:{props.data.description}</p>
-          <p>Genre:{props.data.genre}</p>
-          <p>Cast:{props.data.cast}</p>
-          <a href={props.data.watch_url}>
+          <h2>Name:{name}</h2>
+          <h3>Rating:{rating}</h3>
+          <p>Summary:{description}</p>
+          <p>Genre:{genre}</p>
+          <p>Cast:{cast}</p>
+          <a href={watch_url}>
              <button>Watch Now</button>
           </a>
           </li>
