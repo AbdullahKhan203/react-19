@@ -5,7 +5,7 @@ export default function NetflixSeriesSecond(){
     console.log("NetflixSeriesSecond")
     console.log(Data)
   return (
-    <ul>
+    <ul className='ul grid grid-three-cols'>
 
         {/* {
             Data.map((item,i)=>{
