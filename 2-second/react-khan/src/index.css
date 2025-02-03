@@ -56,3 +56,21 @@ ul{
   flex-direction: column;
   gap:1px;
 }
+
+.rating{
+  border: 1px solid transparent;
+  padding: 0.3rem 1.8rem;
+  color: black;
+  border-radius: 30%;
+}
+
+.super_hit{
+  background: rgb(147, 227, 147);
+}
+.average{
+ background-color: rgb(223, 223, 80);
+}
+
+.below-average{
+  background: rgb(241, 121, 121);
+}
