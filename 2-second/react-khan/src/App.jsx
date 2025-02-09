@@ -4,7 +4,9 @@ import Ternary from "./components/Ternary.jsx"
 import NetflixSeries from "./components/NetflixSeries.jsx"
 import NetflixSeriesSecond from "./components/NetflixSeriesSecond.jsx"
 import ShowOutput from "../src/interviewQuestion/ShowOutput.jsx"
-import "./components/Netflix.css"
+// import "./components/Netflix.css"
+import styles from "./components/Netflix.module.css"
+import StyledComponent from "./components/StyledComponent.jsx"
 // these tow App function work same in backside
 export  const App=()=>{
     console.log("this is app page");
@@ -19,8 +21,10 @@ return (
  <NetflixSeries  age={18}/> */}
 {/*<Ternary/> */}
 {/* <ShowOutput /> */}
-<h1 className="card-heading">List of best netflix series</h1>
-<NetflixSeriesSecond />
+{/* the css styles.heading is comming through module css */}
+{/* <h1 className={styles["card-heading"]}>List of best netflix series</h1>
+<NetflixSeriesSecond /> */}
+<StyledComponent />
 </div>
 
 )
