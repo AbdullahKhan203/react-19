@@ -22,9 +22,9 @@ return (
 {/*<Ternary/> */}
 {/* <ShowOutput /> */}
 {/* the css styles.heading is comming through module css */}
-{/* <h1 className={styles["card-heading"]}>List of best netflix series</h1>
-<NetflixSeriesSecond /> */}
-<StyledComponent />
+<h1 className={styles["card-heading"]}>List of best netflix series</h1>
+<NetflixSeriesSecond />
+{/* <StyledComponent /> */}
 </div>
 
 )

@@ -42,7 +42,7 @@ export default function NetflixCard({data}) {
 
  <li className='list'>
                  <img  src={img_url} alt="image" style={{width:"100%",height:"50%"}} />
-                 <div className='card-content'>
+                 <div className='flex flex-col py-[1.2rem] px-[0.2rem] gap-[1px]'>
           <h2>Name:{name}</h2>
           
          
@@ -51,7 +51,7 @@ export default function NetflixCard({data}) {
           {/* <p style={{backgroundColor:'yellow'}}>RAting:{rating}</p> */}
           {/* <p>Rating:<span className={`rating ${rating <=5 ? "below-average" : rating>5 && rating<=10 ? "average" : rating >10 && rating <=15 ? "super_hit" : "" }`}>{rating}</span></p> */}
           <p>Rating:<span className={`rating ${ratingClass}`}>{rating}</span></p>
-          <p>Summary:{description}</p>
+          <p  className="text-3xl font-bold underline">Summary:{description}</p>
           <p>Genre:{genre.join(", ")}</p>
           <p>Cast: {cast.join(", ")}</p>
           <a href={watch_url}>
