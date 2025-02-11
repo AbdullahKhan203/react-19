@@ -7,6 +7,7 @@ import ShowOutput from "../src/interviewQuestion/ShowOutput.jsx"
 // import "./components/Netflix.css"
 import styles from "./components/Netflix.module.css"
 import StyledComponent from "./components/StyledComponent.jsx"
+import { EventHandling } from "./components/EventHandling.jsx"
 // these tow App function work same in backside
 export  const App=()=>{
     console.log("this is app page");
@@ -22,9 +23,10 @@ return (
 {/*<Ternary/> */}
 {/* <ShowOutput /> */}
 {/* the css styles.heading is comming through module css */}
-<h1 className={styles["card-heading"]}>List of best netflix series</h1>
-<NetflixSeriesSecond />
+{/* <h1 className={styles["card-heading"]}>List of best netflix series</h1>
+<NetflixSeriesSecond /> */}
 {/* <StyledComponent /> */}
+<EventHandling />
 </div>
 
 )
